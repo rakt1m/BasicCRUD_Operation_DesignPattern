@@ -13,7 +13,7 @@ namespace BasicCRUD_Operation_DesignPattern.Models.EntityModels
 
         public string Address { get; set; }
 
-        public int DepartmentId { get; set; }
+        public int? DepartmentId { get; set; }
         public virtual Department Department { get; set; }
     }
 }
