@@ -19,6 +19,7 @@ namespace BasicCRUD_Operation_DesignPattern
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                
                 .UseStartup<Startup>();
     }
 }

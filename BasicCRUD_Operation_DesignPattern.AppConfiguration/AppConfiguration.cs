@@ -5,7 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using BasicCRUD_Operation_DesignPattern.BLL.Contracts;
+using BasicCRUD_Operation_DesignPattern.BLL.Manager;
 using BasicCRUD_Operation_DesignPattern.DbContext.ApplicationDbCOntext;
+using BasicCRUD_Operation_DesignPattern.Repositories.Contracts;
+using BasicCRUD_Operation_DesignPattern.Repositories.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http;
@@ -30,7 +34,16 @@ namespace BasicCRUD_Operation_DesignPattern.AppConfiguration
                
                 b=>b.MigrationsAssembly("BasicCRUD_Operation_DesignPattern.DbContext")));
 
+
+            services.AddTransient<IDepartmentRepository,DepartmentRepository>();
+            services.AddTransient<IDepartmentManager, DepartmentManager>();
+            services.AddTransient<IStudentInfoRepository, StudentInfoRepository>();
+            services.AddTransient<IStudentInfoManager, StudentInfoManager>();
+
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            
         }
     }
 }
