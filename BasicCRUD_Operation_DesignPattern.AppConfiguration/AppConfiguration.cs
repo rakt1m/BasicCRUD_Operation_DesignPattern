@@ -25,8 +25,10 @@ namespace BasicCRUD_Operation_DesignPattern.AppConfiguration
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ApplicationDbContext")));
+         
+                services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("ApplicationDbContext"),
+               
+                b=>b.MigrationsAssembly("BasicCRUD_Operation_DesignPattern.DbContext")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
