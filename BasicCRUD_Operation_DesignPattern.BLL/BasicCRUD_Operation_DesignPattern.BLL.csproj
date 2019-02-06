@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BasicCRUD_Operation_DesignPattern.Models\BasicCRUD_Operation_DesignPattern.Models.csproj" />
+    <ProjectReference Include="..\BasicCRUD_Operation_DesignPattern.Repositories\BasicCRUD_Operation_DesignPattern.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
