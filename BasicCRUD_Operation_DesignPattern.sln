@@ -4,16 +4,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCRUD_Operation_DesignPattern", "BasicCRUD_Operation_DesignPattern\BasicCRUD_Operation_DesignPattern.csproj", "{C90BE90B-A615-4C24-8459-F8106FD786BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5021A469-D393-4948-A90E-7365DC4EC8BE} = {5021A469-D393-4948-A90E-7365DC4EC8BE}
+		{812471B5-8649-4C16-A0A7-06E98E2FF75E} = {812471B5-8649-4C16-A0A7-06E98E2FF75E}
+		{E201C1D1-B17A-4779-A9C8-A0B807A36992} = {E201C1D1-B17A-4779-A9C8-A0B807A36992}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCRUD_Operation_DesignPattern.Models", "BasicCRUD_Operation_DesignPattern.Models\BasicCRUD_Operation_DesignPattern.Models.csproj", "{5021A469-D393-4948-A90E-7365DC4EC8BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCRUD_Operation_DesignPattern.DbContext", "BasicCRUD_Operation_DesignPattern.DbContext\BasicCRUD_Operation_DesignPattern.DbContext.csproj", "{1871B403-125B-4D41-8CF8-DB38C4F46E91}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5021A469-D393-4948-A90E-7365DC4EC8BE} = {5021A469-D393-4948-A90E-7365DC4EC8BE}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCRUD_Operation_DesignPattern.Repositories", "BasicCRUD_Operation_DesignPattern.Repositories\BasicCRUD_Operation_DesignPattern.Repositories.csproj", "{812471B5-8649-4C16-A0A7-06E98E2FF75E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1871B403-125B-4D41-8CF8-DB38C4F46E91} = {1871B403-125B-4D41-8CF8-DB38C4F46E91}
+		{5021A469-D393-4948-A90E-7365DC4EC8BE} = {5021A469-D393-4948-A90E-7365DC4EC8BE}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCRUD_Operation_DesignPattern.AppConfiguration", "BasicCRUD_Operation_DesignPattern.AppConfiguration\BasicCRUD_Operation_DesignPattern.AppConfiguration.csproj", "{E201C1D1-B17A-4779-A9C8-A0B807A36992}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1871B403-125B-4D41-8CF8-DB38C4F46E91} = {1871B403-125B-4D41-8CF8-DB38C4F46E91}
+		{812471B5-8649-4C16-A0A7-06E98E2FF75E} = {812471B5-8649-4C16-A0A7-06E98E2FF75E}
+		{6942E9B5-3FF2-459F-8C78-70019617563F} = {6942E9B5-3FF2-459F-8C78-70019617563F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCRUD_Operation_DesignPattern.BLL", "BasicCRUD_Operation_DesignPattern.BLL\BasicCRUD_Operation_DesignPattern.BLL.csproj", "{6942E9B5-3FF2-459F-8C78-70019617563F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{812471B5-8649-4C16-A0A7-06E98E2FF75E} = {812471B5-8649-4C16-A0A7-06E98E2FF75E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

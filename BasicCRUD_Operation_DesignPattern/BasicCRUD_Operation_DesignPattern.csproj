@@ -7,8 +7,15 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasicCRUD_Operation_DesignPattern.AppConfiguration\BasicCRUD_Operation_DesignPattern.AppConfiguration.csproj" />
+    <ProjectReference Include="..\BasicCRUD_Operation_DesignPattern.Models\BasicCRUD_Operation_DesignPattern.Models.csproj" />
+    <ProjectReference Include="..\BasicCRUD_Operation_DesignPattern.Repositories\BasicCRUD_Operation_DesignPattern.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,11 @@ using System.Text;
 
 namespace BasicCRUD_Operation_DesignPattern.Models.EntityModels
 {
-    class Department
+   public class Department
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public virtual List<StudentInfo> StudentInfos { get; set; }
     }
 }
